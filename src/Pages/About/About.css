@@ -1,0 +1,45 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: var(--colNoAuto);
+  column-gap: var(--colGap);
+}
+
+.cards-grid {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: var(--colNoAuto);
+  column-gap: var(--colGap);
+  row-gap: var(--colGap);
+}
+
+.about-image {
+  grid-column: 1fr;
+}
+
+#about-text1 {
+  grid-row: 2;
+  grid-column: 1/6;
+}
+
+#about-image1 {
+  grid-row: 2;
+  grid-column: 6/12;
+}
+
+#about-text2 {
+  grid-row: 3;
+}
+
+#about-image2 {
+  grid-row: 3;
+}
+
+#about-title1 {
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+#about-title2 {
+  grid-row: 5;
+  grid-column: 1/-1;
+}

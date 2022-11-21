@@ -1,10 +1,18 @@
 :root {
-  --col: auto 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px
+  /* --col: auto 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px
     72px 72px 72px auto;
+  --colNoAuto: repeat(16, 72px);
   --contentCol: 2/18;
-  --lastCol: 13/17;
+  --lastCol: 13/17; */
+
+  --col: auto 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px auto;
+  --lastCol: 10/14;
+  --contentCol: 2/14;
+  --colNoAuto: repeat(12, 72px);
   --colGap: 24px;
-  --green: rgb(107, 142, 35);
+  --green: #367e18;
+  --white: #fdfdfd;
+  --black: #181818;
 }
 
 .app-flex {
@@ -24,8 +32,8 @@
 }
 
 .app-content {
-  grid-row: 3;
-  grid-column: var(--contentCol);
+  grid-row: 2;
+  grid-column: 1/-1;
 }
 
 .banner {
@@ -37,30 +45,45 @@
   object-position: 0% 82%;
 }
 
+.subtitle {
+  font-size: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
 /* large desktop */
-@media screen and (max-width: 1920px) {
+/* @media screen and (max-width: 1920px) {
   :root {
     --col: auto 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px auto;
     --lastCol: 10/14;
     --contentCol: 2/14;
+    --colNoAuto: repeat(12, 72px);
   }
-}
+} */
 
 /* medium desktop */
-@media screen and (max-width: 1360px) {
+/* @media screen and (max-width: 1360px) {
   :root {
     --col: auto 72px 72px 72px 72px 72px 72px 72px 72px auto;
     --lastCol: 6/10;
     --contentCol: 2/10;
+    --colNoAuto: repeat(8, 72px);
   }
-}
+} */
 
 /* small desktop */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1360px) {
   :root {
     --col: auto 72px 72px 72px 72px 72px 72px auto;
     --lastCol: 4/8;
     --contentCol: 2/8;
+    --colNoAuto: repeat(6, 72px);
   }
 }
 
@@ -70,5 +93,6 @@
     --col: auto 72px 72px 72px 72px auto;
     --lastCol: 2/6;
     --contentCol: 2/6;
+    --colNoAuto: repeat(4, 72px);
   }
 }

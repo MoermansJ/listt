@@ -30,9 +30,8 @@
 
 .active-nav-child {
   height: 4px;
-  margin: auto;
   background: var(--green);
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 #navbar-main {
