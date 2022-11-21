@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+:root {
+  --col: auto 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px
+    72px 72px 72px auto;
+  --contentCol: 2/18;
+  --lastCol: 13/17;
+  --colGap: 24px;
+  --green: rgb(107, 142, 35);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-grid {
+  display: grid;
+  grid-template-columns: var(--col);
+  column-gap: var(--colGap);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar {
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+.app-content {
+  grid-row: 3;
+  grid-column: var(--contentCol);
+}
+
+.banner {
+  grid-column: 1/-1;
+  grid-row: 2;
+  height: 268px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 82%;
+}
+
+/* large desktop */
+@media screen and (max-width: 1920px) {
+  :root {
+    --col: auto 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px auto;
+    --lastCol: 10/14;
+    --contentCol: 2/14;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* medium desktop */
+@media screen and (max-width: 1360px) {
+  :root {
+    --col: auto 72px 72px 72px 72px 72px 72px 72px 72px auto;
+    --lastCol: 6/10;
+    --contentCol: 2/10;
+  }
+}
+
+/* small desktop */
+@media screen and (max-width: 1024px) {
+  :root {
+    --col: auto 72px 72px 72px 72px 72px 72px auto;
+    --lastCol: 4/8;
+    --contentCol: 2/8;
+  }
+}
+
+/* handheld devices */
+@media screen and (max-width: 720px) {
+  :root {
+    --col: auto 72px 72px 72px 72px auto;
+    --lastCol: 2/6;
+    --contentCol: 2/6;
   }
 }

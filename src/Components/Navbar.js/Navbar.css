@@ -1,0 +1,52 @@
+.navbar-grid {
+  display: grid;
+  grid-template-columns: var(--col);
+  column-gap: var(--colGap);
+}
+
+#navbar-title {
+  grid-column: 2;
+  font-size: 40px;
+  font-weight: 1000;
+  color: var(--green);
+}
+
+.navbar-pages {
+  grid-column: var(--lastCol);
+  display: grid;
+  grid-template-columns: repeat(4, 72px);
+  column-gap: var(--colGap);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.navbar-page {
+  margin: auto;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  height: 40px;
+}
+
+.active-nav-child {
+  height: 4px;
+  margin: auto;
+  background: var(--green);
+  border-radius: 4px;
+}
+
+#navbar-main {
+  grid-column: 1;
+}
+
+#navbar-about {
+  grid-column: 2;
+}
+
+#navbar-projects {
+  grid-column: 3;
+}
+
+#navbar-contact {
+  grid-column: 4;
+}
