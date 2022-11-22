@@ -1,7 +1,9 @@
 .navbar-grid {
+  margin: auto;
   display: grid;
   grid-template-columns: var(--col);
   column-gap: var(--colGap);
+  height: var(--navbarHeight);
 }
 
 #navbar-title {
@@ -9,6 +11,7 @@
   font-size: 40px;
   font-weight: 1000;
   color: var(--green);
+  margin: auto;
 }
 
 .navbar-pages {
@@ -49,3 +52,9 @@
 #navbar-contact {
   grid-column: 4;
 }
+
+/* @media screen and (max-width: 1360px) {
+  .navbar-pages {
+    display: none;
+  }
+} */

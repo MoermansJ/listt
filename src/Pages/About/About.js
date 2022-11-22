@@ -3,9 +3,9 @@ import TeamProfileCard from "../../Components/TeamProfileCard/TeamProfileCard";
 import TeamProfileData from "../../Data/TeamProfileData";
 
 function About() {
-  return (
-    <div className="about-grid">
-      <h2 className="subtitle" id="about-title1">
+	return (
+		<div className="about-grid">
+			{/* <h2 className="subtitle" id="about-title1">
         Who are we?
       </h2>
       <p className="text" id="about-text1">
@@ -39,9 +39,9 @@ function About() {
         {TeamProfileData.map((item, key = 0) => (
           <TeamProfileCard item={item} key={key} />
         ))}
-      </div>
-    </div>
-  );
+      </div> */}
+		</div>
+	);
 }
 
 //soilhands Photo by Mikhail Nilov: https://www.pexels.com/photo/person-with-soil-on-hands-8543583/
