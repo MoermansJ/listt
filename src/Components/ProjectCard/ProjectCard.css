@@ -1,0 +1,38 @@
+.projectcard {
+  grid-column: span 4;
+  background-color: green;
+  width: 100%;
+  height: 256px;
+  border-top-right-radius: 40px;
+}
+
+.projectcard-overlay {
+  width: 316px;
+  height: 128px;
+  margin: 216px auto;
+  background-color: var(--white);
+  padding-top: 4px;
+  padding-left: 8px;
+}
+
+.projectcard-title {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.projectcard-description {
+  font-size: 20px;
+}
+
+.projectcard-button {
+  border: 2px solid black;
+  width: 308px;
+  margin: 40px auto;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  text-indent: 1px;
+}

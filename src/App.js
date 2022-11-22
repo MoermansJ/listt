@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar.js/Navbar";
 import Main from "./Pages/Main/Main";
 import About from "./Pages/About/About";
-import Projects from "./Pages/Projects";
+import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -13,7 +13,6 @@ function App() {
         <div className="navbar">
           <Navbar />
         </div>
-        {/* <img src={"./images/sunflowers.jpg"} className="banner" alt="banner" /> */}
         <div className="app-content">
           <Routes>
             <Route path="/" element={[<Main />]} />

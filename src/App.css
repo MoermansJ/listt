@@ -32,17 +32,7 @@
 }
 
 .app-content {
-  grid-row: 2;
   grid-column: 1/-1;
-}
-
-.banner {
-  grid-column: 1/-1;
-  grid-row: 2;
-  height: 268px;
-  width: 100%;
-  object-fit: cover;
-  object-position: 0% 82%;
 }
 
 .subtitle {
