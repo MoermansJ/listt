@@ -1,11 +1,11 @@
 .about-grid {
   display: grid;
-  grid-template-columns: var(--colNoAuto);
+  grid-template-columns: var(--col);
   column-gap: var(--colGap);
 }
 
 .cards-grid {
-  grid-column: 1/-1;
+  grid-column: 2;
   display: grid;
   grid-template-columns: var(--colNoAuto);
   column-gap: var(--colGap);
@@ -13,33 +13,36 @@
 }
 
 .about-image {
-  grid-column: 1fr;
+  grid-column: 2;
 }
 
 #about-text1 {
   grid-row: 2;
-  grid-column: 1/6;
+  grid-column: 2/6;
 }
 
 #about-image1 {
   grid-row: 2;
   grid-column: 6/12;
+  display: none;
 }
 
 #about-text2 {
   grid-row: 3;
+  grid-column: 2;
 }
 
 #about-image2 {
   grid-row: 3;
+  display: none;
 }
 
 #about-title1 {
   grid-row: 1;
-  grid-column: 1/-1;
+  grid-column: 2;
 }
 
 #about-title2 {
   grid-row: 5;
-  grid-column: 1/-1;
+  grid-column: 2;
 }
