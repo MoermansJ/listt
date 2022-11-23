@@ -1,11 +1,11 @@
-import ContactForm from "../Components/ContactForm/ContactForm";
+import "./Contact.css"
+import ContactForm from "../../Components/ContactForm/ContactForm";
 
 function Contact() {
 	return (
-		<div>
+		<div className="contact-grid">
 			{/* <img src={"./images/green.jpg"} className="banner" alt="banner" /> */}
-			<h2 className="subtitle">Contact</h2>
-			{/* <ContactForm /> */}
+			<div className="contact-form"><ContactForm /></div>
 		</div>
 	);
 }

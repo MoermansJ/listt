@@ -1,0 +1,15 @@
+.contact-grid {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: var(--col);
+  column-gap: var(--colGap);
+  background: #04abe3;
+}
+
+.contact-grid > h2 {
+  grid-column: 2;
+}
+
+.contact-form {
+  grid-column: 2/8;
+}

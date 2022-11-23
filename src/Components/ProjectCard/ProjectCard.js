@@ -4,7 +4,7 @@ function ProjectCard({ item }) {
 	const { title, description, image } = item;
 
 	return (
-		<div className="projectcard">
+		<div className="projectcard fade-in">
 			<img src={image} alt="project thumbnail" className="projectcard-image" />
 			<div className="projectcard-overlay">
 				<div className="projectcard-title">{title}</div>

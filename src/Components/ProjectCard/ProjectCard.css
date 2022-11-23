@@ -58,4 +58,11 @@
   padding-bottom: 4px;
   letter-spacing: 1px;
   text-indent: 1px;
+  transition: 0.2s all ease-in-out;
+}
+
+.projectcard-button:hover {
+  background: var(--black);
+  color: var(--white);
+  font-weight: bold;
 }

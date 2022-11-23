@@ -46,62 +46,22 @@ function ContactForm() {
 			onSubmit={sendEmail}
 			onChange={handleChange}
 		>
-			<div className="contact-field" id="contact-from_name">
-				<input
-					type="text"
-					placeholder="name"
-					name="from_name"
-					className="contact-field-input"
-					required
-				/>
-				<img
-					src="https://www.svgrepo.com/show/327461/person.svg"
-					alt="name"
-					className="contact-field-icon"
-				/>
-			</div>
 
-			<div className="contact-field" id="contact-email">
-				<input
-					placeholder="e-mail"
-					name="from_email"
-					type="email"
-					className="contact-field-input"
-					required
-				/>
-				<img
-					src="https://www.svgrepo.com/show/383303/email-address-sign-at-inbox.svg"
-					alt="email address"
-					className="contact-field-icon"
-				/>
-			</div>
-			{/* 
-  <div className="contact-field" id="contact-subject">
-    <input
-      type="text"
-      placeholder="subject"
-      className="contact-field-input"
-      name="subject"
-    />
-  </div> */}
+			<div className="form-grid">
+				<label htmlFor="name">NAME</label>
+				<input type="text" id="name" name="name" required />
+				<label htmlFor="email">E-MAIL</label>
+				<input type="email" id="email" name="email" required />
+				<label htmlFor="message">MESSAGE</label>
+				<textarea id="message" name="message" required />
+				<button type="submit" id="submit" name="submit">SUBMIT</button>
+			</div >
 
-			<div className="contact-field" id="contact-message">
-				<textarea
-					type="text"
-					placeholder="message"
-					className="contact-field-input"
-					name="message"
-					required
-				/>
-			</div>
-
-			{/* <div className="contact__asterisk">{"* = required"}</div> */}
-
-			<button id="contact-send" ref={submitRef}>
-				<div>SEND</div>
-			</button>
-		</form>
+		</form >
 	)
 }
 
 export default ContactForm
+
+
+

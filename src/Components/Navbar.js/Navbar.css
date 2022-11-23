@@ -6,12 +6,10 @@
   height: var(--navbarHeight);
 }
 
-#navbar-title {
+#navbar-logo {
   grid-column: 2;
-  font-size: 40px;
-  font-weight: 1000;
-  color: var(--green);
   margin: auto;
+  width: 100%;
 }
 
 .navbar-pages {
