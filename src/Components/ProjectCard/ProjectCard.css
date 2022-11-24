@@ -2,6 +2,7 @@
   grid-column: span 4;
   height: 256px;
   position: relative;
+  opacity: 0;
 }
 
 .projectcard-image {
