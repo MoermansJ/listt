@@ -7,29 +7,29 @@ import ProjectsData from "../../Data/ProjectsData";
 import { Timeline } from "gsap/gsap-core";
 
 function Projects() {
-  gsap.registerPlugin(ScrollTrigger);
+	gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
-    ScrollTrigger.batch(".fade-in", {
-      onEnter: batch =>
-        gsap.fromTo(
-          batch,
-          { y: 50, opacity: 0 },
-          { y: 0, opacity: 1, stagger: 0.1 }
-        ),
-    });
-  }, []);
+	useEffect(() => {
+		ScrollTrigger.batch(".fade-in", {
+			onEnter: batch =>
+				gsap.fromTo(
+					batch,
+					{ y: 50, opacity: 0 },
+					{ y: 0, opacity: 1, stagger: 0.25 }
+				),
+		});
+	}, []);
 
-  return (
-    <div className="projects-grid">
-      {/* <h2 className="subtitle">Projects</h2> */}
-      <div className="card-grid">
-        {ProjectsData.map((item, key = 0) => (
-          <ProjectCard item={item} key={key} />
-        ))}
-      </div>
-    </div>
-  );
+	return (
+		<div className="projects-grid">
+			{/* <h2 className="subtitle">Projects</h2> */}
+			<div className="card-grid">
+				{ProjectsData.map((item, key = 0) => (
+					<ProjectCard item={item} key={key} />
+				))}
+			</div>
+		</div>
+	);
 }
 
 export default Projects;
