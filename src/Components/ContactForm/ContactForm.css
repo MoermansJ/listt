@@ -7,11 +7,13 @@
 }
 
 .form-grid > input {
-  border: none;
-  border-bottom: 2px solid var(--black);
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
   outline: none;
   margin-top: 8px;
   margin-bottom: 40px;
+  padding: 8px 8px;
+  font-size: 16px;
 }
 
 .form-grid > label,
@@ -22,28 +24,36 @@ input {
 
 .form-grid > textarea {
   height: 200px;
-  border: 2px solid var(--black);
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
   outline: none;
   resize: none;
   font: inherit;
   margin-top: 12px;
   margin-bottom: 40px;
-  padding: 4px;
+  padding: 8px 8px;
+  font-family: "satoshi";
+  font-size: 17.5px;
 }
 
 .form-grid > button {
   height: 60px;
   width: 160px;
   margin: auto;
-  border: 2px solid var(--black);
   background: var(--black);
   color: var(--white);
   transition: 0.2s all ease-in-out;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .form-grid > button:hover {
   background: #fff;
   color: #000;
   font-weight: bold;
+}
+
+.form-grid > input:focus,
+.form-grid > textarea:focus {
+  border: 1px solid #181818;
 }

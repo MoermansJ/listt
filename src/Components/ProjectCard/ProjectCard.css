@@ -50,6 +50,8 @@
 
 .projectcard-button {
   border: 2px solid black;
+  border-radius: 4px;
+
   width: 308px;
   margin: 40px auto;
   text-align: center;

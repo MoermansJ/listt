@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: var(--col);
   column-gap: var(--colGap);
-  background: #04abe3;
+  margin-top: 16px;
 }
 
 .contact-grid > h2 {
