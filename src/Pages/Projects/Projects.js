@@ -15,7 +15,7 @@ function Projects() {
 				gsap.fromTo(
 					batch,
 					{ y: 50, opacity: 0 },
-					{ y: 0, opacity: 1, stagger: 0.25 }
+					{ y: 0, opacity: 1, stagger: 0.18 }
 				),
 		});
 	}, []);

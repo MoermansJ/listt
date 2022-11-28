@@ -34,4 +34,6 @@ function Main() {
 	);
 }
 
+//plantcloseup Photo by PhotoMIX Company: https://www.pexels.com/photo/closeup-photo-of-sprout-1002703/
+
 export default Main;
