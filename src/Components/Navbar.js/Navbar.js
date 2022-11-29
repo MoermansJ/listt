@@ -1,6 +1,8 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
+import listt from "../../images/listt.png"
+
 
 function Navbar() {
 	const handleClick = e => {
@@ -46,7 +48,7 @@ function Navbar() {
 	return (
 		<nav className="navbar-grid">
 			{/* <h1 id="navbar-title">listt.io</h1> */}
-			<img src={"./images/listt.png"} alt="listt logo" id="navbar-logo" />
+			<img src={listt} alt="listt logo" id="navbar-logo" />
 			<div className="navbar-pages" onClick={handleClick}>
 				<Link to="/" className="navbar-page active-nav">
 					<span id="navbar-main">Main</span>
