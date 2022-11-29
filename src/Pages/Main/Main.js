@@ -1,11 +1,12 @@
 import "./Main.css";
+import plantcloseup from "../../images/plantcloseup.jpg"
 
 function Main() {
 
 	return (
 		<div className="main-grid fade-in">
 			<img
-				src={"%PUBLIC_URL%/images/plantcloseup.jpg"}
+				src={plantcloseup}
 				alt="plant close up"
 				id="main-image1"
 			/>

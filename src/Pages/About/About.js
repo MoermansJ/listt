@@ -1,6 +1,8 @@
 import "./About.css";
 import TeamProfileCard from "../../Components/TeamProfileCard/TeamProfileCard";
 import TeamProfileData from "../../Data/TeamProfileData";
+import about1 from "../../images/about1.jpg"
+
 
 function About() {
 	return (
@@ -8,7 +10,7 @@ function About() {
 
 			<div className="top-image-flex">
 				<span>Technological solutions for regeneration</span>
-				<img src={process.env.PUBLIC_URL + "/images/about1.jpg"} className="top-image" alt="" />
+				<img src={about1} className="top-image" alt="" />
 			</div>
 
 			<div className="about-flex">
