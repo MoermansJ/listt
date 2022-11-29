@@ -1,19 +1,25 @@
 import "./TeamProfileCard.css";
 
 function TeamProfileCard({ item }) {
-  const { image, name, title } = item;
+	const { image, name, title, description } = item;
 
-  return (
-    <div className="card">
-      <div className="card-top">
-        <img src={image} alt="team profile picture" className="card-image" />
-      </div>
-      <div className="card-bottom">
-        <span className="card-title">{title}</span>
-        <span className="card-name">{name}</span>
-      </div>
-    </div>
-  );
+	return (
+		<div className="card">
+
+			<div className="card-image" />
+			{/* ^^replace with img */}
+
+			<div className="card-right">
+				<span className="card-name">{name}</span>
+				<span className="card-title">{title}</span>
+				<span className="card-icons">Twitter, LinkedIn icons etc... </span>
+				<div className="divider-line" />
+				<div className="card-description">{description}</div>
+				<div className="divider-line" />
+			</div>
+
+		</div>
+	);
 }
 
 export default TeamProfileCard;

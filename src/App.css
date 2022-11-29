@@ -9,8 +9,10 @@
   --lastCol: 10/14;
   --colGap: 24px;
   --green: #367e18;
-  --white: #fdfdfd;
-  --black: #181818;
+  /* --white: #fcfcfc; OLD*/
+  --white: #f1efeb;
+  /* --black: #181818; OLD*/
+  --black: #31302f;
   --navbarHeight: 64px;
 }
 
