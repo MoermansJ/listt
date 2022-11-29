@@ -50,7 +50,7 @@ function Navbar() {
 			{/* <h1 id="navbar-title">listt.io</h1> */}
 			<img src={listt} alt="listt logo" id="navbar-logo" />
 			<div className="navbar-pages" onClick={handleClick}>
-				<Link to="/joeao1" className="navbar-page active-nav">
+				<Link to="/listt" className="navbar-page active-nav">
 					<span id="navbar-main">Main</span>
 					<div className="active-nav-child"></div>
 				</Link>
