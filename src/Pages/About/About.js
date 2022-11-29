@@ -8,7 +8,7 @@ function About() {
 
 			<div className="top-image-flex">
 				<span>Technological solutions for regeneration</span>
-				<img src={"./images/about1.jpg"} className="top-image" alt="" />
+				<img src={process.env.PUBLIC_URL + "/images/about1.jpg"} className="top-image" alt="" />
 			</div>
 
 			<div className="about-flex">

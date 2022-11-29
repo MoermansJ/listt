@@ -5,7 +5,7 @@ function Main() {
 	return (
 		<div className="main-grid fade-in">
 			<img
-				src={"./images/plantcloseup.jpg"}
+				src={"%PUBLIC_URL%/images/plantcloseup.jpg"}
 				alt="plant close up"
 				id="main-image1"
 			/>
