@@ -13,7 +13,7 @@ function App() {
 			<Navbar />
 			<div className="app-grid">
 				<Routes>
-					<Route path="/" element={[<Main />]} />
+					<Route path="/joeao1" element={[<Main />]} />
 					<Route path="/about" element={[<About />]} />
 					<Route path="/projects" element={[<Projects />]} />
 					<Route path="/contact" element={[<Contact />]} />
