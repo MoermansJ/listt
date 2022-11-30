@@ -6,7 +6,7 @@ import listt from "../../images/listt.png"
 
 function Navbar() {
 	const handleClick = e => {
-		const time = 300;
+		const time = 250;
 
 		if (
 			!e.target.classList.contains("active-nav") &&
@@ -19,8 +19,8 @@ function Navbar() {
 
 			gsap.fromTo(
 				prevChild,
-				{ width: "100%" },
-				{ width: "0%", duration: `0.${time}` }
+				{ y: 0 },
+				{ y: -10, duration: `0.${time}` }
 			);
 
 			setTimeout(() => {
@@ -38,8 +38,8 @@ function Navbar() {
 
 				gsap.fromTo(
 					child,
-					{ width: "0%" },
-					{ width: "100%", duration: `0.${time}` }
+					{ y: -10 },
+					{ y: 0, duration: `0.${time}` }
 				);
 			}, time);
 		}
@@ -48,7 +48,11 @@ function Navbar() {
 	return (
 		<nav className="navbar-grid">
 			{/* <h1 id="navbar-title">listt.io</h1> */}
-			<img src={listt} alt="listt logo" id="navbar-logo" />
+
+			<Link to="/listt" id="navbar-logo" >
+				<img src={listt} alt="listt logo" />
+			</Link>
+
 			<div className="navbar-pages" onClick={handleClick}>
 				<Link to="/listt" className="navbar-page active-nav">
 					<span id="navbar-main">Main</span>

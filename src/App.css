@@ -6,14 +6,14 @@
 
   --col: auto 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px auto;
   --colNoAuto: repeat(12, 72px);
-  --lastCol: 10/14;
+  --lastCol: 9/14;
   --colGap: 24px;
   --green: #367e18;
   /* --white: #fcfcfc; OLD*/
   --white: #f1efeb;
   /* --black: #181818; OLD*/
   --black: #31302f;
-  --navbarHeight: 64px;
+  --navbarHeight: 80px;
 }
 
 .app-grid {
@@ -48,7 +48,7 @@
   :root {
     --col: auto 72px 72px 72px 72px 72px 72px 72px 72px auto;
     --colNoAuto: repeat(8, 72px);
-    --lastCol: 6/10;
+    --lastCol: 5/10;
   }
 }
 
@@ -65,7 +65,7 @@
 @media screen and (max-width: 800px) {
   :root {
     --col: auto 72px 72px 72px 72px auto;
-    --lastCol: 2/6;
+    --lastCol: 1/6;
     --colNoAuto: repeat(4, 72px);
   }
 }

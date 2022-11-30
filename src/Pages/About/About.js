@@ -2,6 +2,7 @@ import "./About.css";
 import TeamProfileCard from "../../Components/TeamProfileCard/TeamProfileCard";
 import TeamProfileData from "../../Data/TeamProfileData";
 import about1 from "../../images/about1.jpg"
+import Footer from "../../Components/Footer/Footer";
 
 
 function About() {
@@ -49,6 +50,8 @@ function About() {
 					))}
 				</div>
 			</div>
+
+			<Footer />
 
 		</div >
 	);
