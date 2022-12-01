@@ -67,4 +67,9 @@
   .team-profiles {
     justify-content: center;
   }
+
+  .footer-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
